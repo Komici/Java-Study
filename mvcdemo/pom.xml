@@ -5,7 +5,19 @@
 	<artifactId>mvcdemo</artifactId>
 	<packaging>pom</packaging>
 	<version> 1.0-SNAPSHOT </version>
-	<name>mvcdemo</name>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>7</source>
+                    <target>7</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+    <name>mvcdemo</name>
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
@@ -32,7 +44,16 @@
 			<scope>test</scope>
 		</dependency>
 		<!-- mybatis -->
-
-
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-lang3</artifactId>
+			<version>3.12.0</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/com.auth0/java-jwt -->
+		<dependency>
+			<groupId>com.auth0</groupId>
+			<artifactId>java-jwt</artifactId>
+			<version>3.10.3</version>
+		</dependency>
 	</dependencies>
 </project>
