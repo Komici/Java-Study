@@ -1,17 +1,18 @@
 server:
-  port: 9000
+  port: 9001
 spring:
+  session:
+    store-type: none
+  profiles:
+    active: local
   datasource:
     url: jdbc:mysql://localhost:3306/javastudy?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&serverTimezone=Asia/Shanghai
     username: root
     password: 123456
     driver-class-name: com.mysql.cj.jdbc.Driver
-
   redis:
-    database: 5
-    host: 192.168.101.201         # Redis服务器地址
-    port: 6379              # Redis服务器连接端口
-    password:               # Redis服务器连接密码（默认为空）
+    redisson:
+      config: classpath:redisson-${spring.profiles.active}.yml
 
 mybatis:
   mapper-locations: classpath*:com/app/**/mapping/**/*.xml

@@ -15,6 +15,7 @@
       <list>
         <option value="Tag Library Descriptor" />
         <option value="Interface" />
+        <option value="Yml File" />
         <option value="Class" />
       </list>
     </option>
@@ -60,7 +61,7 @@
     "project.structure.last.edited": "模块",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.3448276",
-    "settings.editor.selected.configurable": "MavenSettings",
+    "settings.editor.selected.configurable": "fileTemplates",
     "spring.configuration.checksum": "c0dd80813b36a526686df90b0a2ee146"
   }
 }]]></component>
@@ -123,10 +124,27 @@
       <workItem from="1653440994536" duration="13849000" />
       <workItem from="1653527693800" duration="199000" />
       <workItem from="1653534312467" duration="3548000" />
+      <workItem from="1654066826197" duration="5343000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/app/api/client/user/controller/loginController.java</url>
+          <line>27</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="SpringBootApplicationConfigurationType">
+        <watch expression="SysUser.class.getSimpleName()" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>
